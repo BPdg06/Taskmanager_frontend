@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [Github repo link(frontend)](https://github.com/BPdg06/project-2-329)
+- [Github repo link(frontend)](https://github.com/BPdg06/Taskmanager_frontend)
 - [Deployment link](https://djangoreactfrontend-todo.netlify.app/)
 
 ## Project Description
