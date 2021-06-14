@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
 
-## Available Scripts
+- [Github repo link(frontend)](https://github.com/BPdg06/project-2-329)
+- [Github repo link(backend)]()
+- [Deployment link](https://project2seirreact.netlify.app/)
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+My React project is going to be showing the users to filter and search the characters by their names and for each character's information including actor's name, status and etc, will be displaying with the photo. In addition, the users may add their favorite characters to the "My List" and save them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-### `npm test`
+- [Mobile Wireframe](https://i.imgur.com/O2BnRup.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### MVP/PostMVP - 5min
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### MVP 
+- Find and use external api to create the characters list on the page and filter by charater names
+- Render data on page 
+- Allow user to interact with the page by searching and create their favorite characters to "My List"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### PostMVP 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add more of CSS styles/effects for the components
+- Create Quotes API calls to filter by character names
+- Create About Page for brief introduction of the project
+- Make the Footer for the pages
 
-### `npm run eject`
+## Components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Component | Description | 
+| --- | :---: |  
+| App | This will make the initial data pull and include React Router and shows the main page | 
+| Nav | This will render the navigation bar with links to each content page | 
+| Search | This will filter through the characters lists by their name | 
+| MyList | This will render the characters lists in the separate page | 
+| CharacterCards | This will render the characters lists including the image | 
+| CharacterContents | This will render the contents of the character in the cards | 
+| About | This will render a brief explanation of the project | 
+| Quotes | This will contain the list of Quotes of characters | 
+| Footer | This will render the footer of the page | 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Time Frames
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Project Planning | H | 4hrs| 2hrs | 6hrs |
+| Create React App | H | 1hr| 1hrs | 4hrs |
+| Routes Setup | H | 1hr| 1hrs | 4hrs |
+| Nav Bar | H | 1.5hrs| 0.5hrs | 1.5hrs |
+| Search Form | H | 3hrs| 2hrs | 4hrs |
+| Character Cards | H | 3.5hrs| 2hrs | 5hrs |
+| Character Contents | H | 3hrs| 2hrs | 4hrs |
+| My List | H | 2hrs| 1hrs | 3.5hrs |
+| Working with API | H | 5hrs| 3hrs | 6hrs |
+| Style of components | H | 4.5hrs| 2hrs | 5hrs |
+| About | L | 1hr| 0hrs | 0hrs |
+| Quotes | L | 4hrs| 0hrs | 0hrs |
+| Footer | L | 1hr| 0.5hrs | 1hrs |
+| Total | H | 34.5hrs| 17hrs | 44hrs |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Additional Libraries
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Code Snippet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
