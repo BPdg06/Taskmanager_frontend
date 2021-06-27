@@ -44,7 +44,7 @@ const Todos = (props) => {
     //
 
     const handleUpdate = async(item) => {
-        const response = await fetch(props.URL + "todo/" + item._id, {
+        const response = await fetch(props.URL + "todo/" + 5, {
             method: "put",
             headers: {
                 Authorization: `Bearer ${props.tokens.access}`,
@@ -62,9 +62,9 @@ const Todos = (props) => {
     }
 
     const handleDelete = async(item) => {
-      console.log(item)
+      console.log(item, "this is the handleDelete")
       
-        const response = await fetch(props.URL + "todo/" + item._id, {
+        const response = await fetch(props.URL + "todo/" + 5, {
             method: "delete",
             headers: {
                 Authorization: `Bearer ${props.tokens.access}`
@@ -79,10 +79,17 @@ const Todos = (props) => {
     <h1>Todos</h1>
     <input type="text" name="newtodo" ref={newTodo}/>
     <button onClick={handleNew}>New Todo</button>
-    <button onClick={handleUpdate}>Edit</button>
-    <button onClick={handleDelete}>Delete</button>
+    
     <ul>
-        {todos && todos.length > 0 ? todos.map((todo => <h1>{todo.item}</h1>)) : null}
+        {todos && todos.length > 0 ? todos.map(todo => {
+          return ( 
+          <li>
+            <h1>{todo.item}</h1>
+            <button onClick={() => handleUpdate(item._id)}>Edit</button>
+            <button onClick={handleDelete}>Delete</button>
+          </li>
+          )
+        }) : null}
     </ul>
     </>
 }
