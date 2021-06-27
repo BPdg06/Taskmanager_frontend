@@ -85,7 +85,7 @@ const Todos = (props) => {
           return ( 
           <li>
             <h1>{todo.item}</h1>
-            <button onClick={() => handleUpdate(item._id)}>Edit</button>
+            <button onClick={handleUpdate}>Edit</button>
             <button onClick={handleDelete}>Delete</button>
           </li>
           )
