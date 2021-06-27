@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import "milligram";
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 ReactDOM.render(
   <Router>
     <React.StrictMode>
-      <App />
+      <Route path="/" component={App}/>
     </React.StrictMode>
   </Router>,
   document.getElementById('root')
