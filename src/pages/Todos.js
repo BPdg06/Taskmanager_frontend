@@ -44,7 +44,7 @@ const Todos = (props) => {
     //
 
     const handleUpdate = async(item) => {
-        const response = await fetch(props.URL + "todo/" + 5, {
+        const response = await fetch(props.URL + "todo/" + item.id, {
             method: "put",
             headers: {
                 Authorization: `Bearer ${props.tokens.access}`,
@@ -64,7 +64,7 @@ const Todos = (props) => {
     const handleDelete = async(item) => {
       console.log(item, "this is the handleDelete")
       
-        const response = await fetch(props.URL + "todo/" + 5, {
+        const response = await fetch(props.URL + "todo/" + item.id, {
             method: "delete",
             headers: {
                 Authorization: `Bearer ${props.tokens.access}`
@@ -85,8 +85,8 @@ const Todos = (props) => {
           return ( 
           <li>
             <h1>{todo.item}</h1>
-            <button onClick={handleUpdate}>Edit</button>
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={() => handleUpdate(todo)}>Edit</button>
+            <button onClick={() => handleDelete(todo)}>Delete</button>
           </li>
           )
         }) : null}
